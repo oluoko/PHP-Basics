@@ -9,7 +9,7 @@
 
     <section>
 <?php   
-    require_once "classes/converter.php";    
+    require_once "./classes.php";    
   
     if(isset($_POST["amount"]) && isset($_POST["crypto"])){
 
@@ -18,9 +18,11 @@
         $crypto = $_POST["crypto"];
 
         
-        $converter = new Converter($crypto);
+        $converter = new CryptoConverter($crypto);
+        $result = $converter->convert($amount);
 
         echo "<p> You want to convert $amount $crypto</p>";
+        echo "<p> You have $result USD</p>";
     } else{ 
         echo "<h2>Oops! It didn't work. Please try again properly</h2>";
     }
