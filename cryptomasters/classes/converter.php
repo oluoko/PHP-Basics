@@ -1,11 +1,18 @@
 <?php
-class CryptoConverter {
+
+class Converter {
+ 
+}
+
+interface CanConvert {
+    public function convert(float $value);
+}
+
+class CryptoConverter extends Converter {
     // properties
-    // public string $currencyCode;
 
     // constructor
      function __construct(public string $currencyCode) {
-        // $this->currencyCode = $currencyCode;
     }
 
     //

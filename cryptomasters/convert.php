@@ -9,16 +9,16 @@
 
     <section>
 <?php   
-    $browserUA = $_SERVER["HTTP_USER_AGENT"];
-
-    var_dump($browserUA);
-    // var_dump($_SERVER);
-
+    require_once "classes/converter.php";    
+  
     if(isset($_POST["amount"]) && isset($_POST["crypto"])){
 
          // Superglobal Variables
         $amount = $_POST["amount"];
         $crypto = $_POST["crypto"];
+
+        
+        $converter = new Converter($crypto);
 
         echo "<p> You want to convert $amount $crypto</p>";
     } else{ 
