@@ -13,6 +13,7 @@
         <option value="ETH">Ethereum</option>
         <option value="LTC">Litecoin</option>
     </select>
+    <button type="submit">Convert</button>
 </form>
 
 
