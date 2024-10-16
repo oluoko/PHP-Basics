@@ -4,7 +4,7 @@
 
 <h1>Crypto Masters</h1>
 
-<form  action="convert.php">
+<form  action="convert.php" method="post">
     <label for="amount">Amount</label>
     <input id="amount" name="amount">
     <label for="crypto">Crypto Currency</label>
