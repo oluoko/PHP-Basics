@@ -39,14 +39,12 @@
         foreach ($exhibits as $exhibit) :
       ?>
       <article>
-        <h2>Life in Ancient Greek</h2>
+        <h2><?php echo $exhibit["title"] ?></h2>
         <p>
-          Uncover the world of ancient Greece through the sculptures, tools, and
-          jewelry found in ruins from over 2000 years ago that have been
-          unearthed through modern science and technology.
+         <?php echo $exhibit["description"] ?>
         </p>
         <img
-          src="gallery/ancient-greece.png"
+          src="gallery/<?php echo $exhibit["image"] ?>"
           fetchpriority="high"
           decoding="sync"
         />
