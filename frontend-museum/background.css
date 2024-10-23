@@ -1,6 +1,9 @@
 body {
-    background-image: url('images/gradient.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+  /* a black-gray-blue raidal gradient background color */
+  background: radial-gradient(
+    circle,
+    rgb(8, 37, 55) 0%,
+    rgb(19, 16, 41) 50%,
+    rgb(0, 0, 0) 100%
+  );
 }
